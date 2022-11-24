@@ -1,0 +1,329 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "New Rocker", sans-serif;
+  font-size: 12px;
+  color: #424242;
+}
+
+/*
+ * Header
+ *
+ */
+
+.header {
+  min-height: 56px;
+  transition: min-height 0.3s;
+}
+
+.header_inner {
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header_title {
+  font-weight: 1000;
+  font-size: 4em;
+  margin: 0.5em 0.25em;
+  display: inline-block;
+  color: #212121;
+}
+
+.header_menu {
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 32px;
+  margin: 10px auto;
+  display: block;
+  width: 30px;
+}
+
+#menu {
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 32px;
+  text-decoration: none;
+  color: black;
+}
+
+
+/*
+ * Top level navigation
+ */
+
+.nav {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.nav_list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.nav_item {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.nav a {
+  display: inline-block;
+  padding: 1.3em;
+  text-decoration: none;
+  color: #616161;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+
+/*
+ * Jumbotron
+ */
+
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 380px;
+  width: 100%;
+  text-align: center;
+  background-image:  url('../public/images/heros/hero-image_4.jpg');
+  background-size: 800px 500px;
+  background-position: center;
+  background-color: green;
+}
+
+.hero_inner {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.hero_title {
+  color: white;
+  font-weight: 900;
+  font-size: 36px;
+}
+
+.hero_tagline {
+  color: #fff;
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+
+/*
+ * main
+ */
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*
+ * content
+ */
+
+.content {
+  padding: 32px;
+}
+
+/*
+ * headline
+ */
+
+.headline_figure {
+  width: 100%;
+}
+
+.headline_figure img {
+  width: 100%;
+}
+
+.headline_figure figcaption {
+  text-align: center;
+  color: #666666;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+.headline_content {
+  width: 100%;
+  padding: 16px 0;
+}
+
+.headline_title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.headline_description {
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+/*
+ * latest
+ */
+
+.latest {
+  width: 100%;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.latest_label {
+  font-size: 52px;
+  font-weight: lighter;
+}
+
+.latest_label::after {
+  content: '';
+  margin-top: 16px;
+  display: block;
+  border-bottom: 1px solid #eeeeee;
+}
+
+/*
+ * post
+ */
+
+.posts {
+  margin: 32px auto auto;
+  text-align: left;
+}
+
+/*
+ * post item
+ */
+
+ .post-item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.post-item_content {
+  padding: 16px;
+}
+
+.post-item_thumbnail {
+  position: relative;
+  width: 100%;
+  opacity: 0.7;
+  filter: brightness(50%);
+  z-index: -1;
+}
+
+.post-item_city {
+  padding: 100px;
+  color: white;
+  text-align: center;
+  position: absolute;
+  font-size: 45px;
+}
+
+.post-item_rating {
+  min-height: 44px;
+  min-width: 44px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #999;
+}
+
+.post-item_rate_number {
+  color: red;
+  text-decoration: none;
+}
+
+.post-item_title {
+  min-height: 44px;
+  min-width: 44px;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 16px;
+  transition: 0.3s opacity;
+}
+
+.post-item_title:hover {
+  opacity: 0.5;
+}
+
+.post-item_title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-item_description {
+  margin-top: 16px;
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+/*
+ * footer
+ */
+
+footer {
+  background-color: #2c3e50;
+  padding: 2em;
+  width: 100%;
+  text-align: center;
+}
+
+footer ul {
+  margin: 0 auto;
+  display: inline-block;
+}
+
+footer li {
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-block;
+  margin: 0 1em;
+  font-size: 14px;
+}
+
+.ftr {
+  color: white;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #bf1722;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
